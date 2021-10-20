@@ -8,14 +8,14 @@ package Backgammon;
 public enum Side {
 
     /** Possible square or player colors. */
-    BROWN, SPRUCE;
+    MAHOGANY, SPRUCE;
 
     /** Return the reverse of this Side:: BROWN <->SPRUCE */
     Side opposite() {
-        if (this == Side.BROWN) {
+        if (this == Side.MAHOGANY) {
             return SPRUCE;
         }
-        return BROWN;
+        return MAHOGANY;
     }
 
     /** Return my lower case name. */

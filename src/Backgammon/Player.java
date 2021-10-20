@@ -13,6 +13,10 @@ abstract class Player {
     Player(Game game, Side color) {
         _game = game;
         _color = color;
+        _collected = 0;
+        _held = 0;
+        _collector = false;
+
     }
 
     /** Getter method to retrieve the side of this player. */
@@ -40,5 +44,14 @@ abstract class Player {
 
     /** Variable representing the Side this player is using. */
     private Side _color;
+
+    /** Stores the number of collected pieces for this Player. */
+    private int _collected;
+
+    /** Stores the number of pieces you hold of the opponents color. */
+    private int _held;
+
+    /** Tells this Player whether or not they can begin collecting. */
+    private boolean _collector;
 
 }
